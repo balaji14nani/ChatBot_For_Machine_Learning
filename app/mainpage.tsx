@@ -23,7 +23,7 @@ export default function Mainpage() {
         
         setchathistory((prev) => [...prev, { role: "user", content: message }]);
 
-        const response= await fetch("http://127.0.0.1:8000/message",{
+        const response= await fetch("https://backend-mcp-08gt.onrender.com/message",{
             method:'POST',
             headers:{
                 'content-type':'application/json',
